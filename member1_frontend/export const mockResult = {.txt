@@ -1,0 +1,32 @@
+export const mockResult = {
+  status: "Analysis complete",
+
+  security_score: 82,
+
+  protocols: ["SMTP"],
+
+  starttls_detected: true,
+
+  tls_version: "TLS 1.2",
+
+  cipher_suite:
+    "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+
+  key_exchange: "ECDHE",
+
+  forward_secrecy: true,
+
+  findings: [
+    {
+      severity: "MEDIUM",
+
+      type: "CERTIFICATE_REVIEW",
+
+      message:
+        "Certificate chain should be verified against the trusted CA store.",
+
+      recommendation:
+        "Validate the complete X.509 chain and trust anchors."
+    }
+  ]
+};
