@@ -1,0 +1,9 @@
+Place your test/demo capture file here, named exactly:
+
+    sample.pcap
+
+(or edit DEFAULT_SAMPLE in test_parser.py if you'd rather name it something else,
+or a .pcapng file).
+
+This folder is deliberately INSIDE pcap_parser/ rather than as a new top-level
+folder, since Member 2's module should stay self-contained.
