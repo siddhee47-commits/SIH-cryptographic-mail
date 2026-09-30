@@ -1,0 +1,95 @@
+{
+    "module": "M4 - TLS and Certificate Analysis",
+    "streams_analyzed": 4,
+    "results": [
+        {
+            "stream_id": "192.168.1.10:49152-192.0.2.10:25",
+            "protocol": "SMTP",
+            "starttls_detected": false,
+            "tls": {
+                "observed": false,
+                "tls_version": null,
+                "cipher_suite": null,
+                "key_exchange": null,
+                "forward_secrecy": null
+            },
+            "certificate": {
+                "observed": false,
+                "details": null
+            },
+            "findings": [
+                {
+                    "severity": "HIGH",
+                    "type": "NO_STARTTLS",
+                    "message": "SMTP stream does not show STARTTLS.",
+                    "recommendation": "Use TLS/STARTTLS for email communication."
+                }
+            ]
+        },
+        {
+            "stream_id": "192.168.1.10:49153-192.0.2.20:143",
+            "protocol": "IMAP",
+            "starttls_detected": false,
+            "tls": {
+                "observed": false,
+                "tls_version": null,
+                "cipher_suite": null,
+                "key_exchange": null,
+                "forward_secrecy": null
+            },
+            "certificate": {
+                "observed": false,
+                "details": null
+            },
+            "findings": [
+                {
+                    "severity": "HIGH",
+                    "type": "NO_STARTTLS",
+                    "message": "IMAP stream does not show STARTTLS.",
+                    "recommendation": "Use TLS/STARTTLS for email communication."
+                }
+            ]
+        },
+        {
+            "stream_id": "192.168.1.10:49154-192.0.2.30:110",
+            "protocol": "POP3",
+            "starttls_detected": false,
+            "tls": {
+                "observed": false,
+                "tls_version": null,
+                "cipher_suite": null,
+                "key_exchange": null,
+                "forward_secrecy": null
+            },
+            "certificate": {
+                "observed": false,
+                "details": null
+            },
+            "findings": [
+                {
+                    "severity": "HIGH",
+                    "type": "NO_STARTTLS",
+                    "message": "POP3 stream does not show STARTTLS.",
+                    "recommendation": "Use TLS/STARTTLS for email communication."
+                }
+            ]
+        },
+        {
+            "stream_id": "192.168.1.10:49155-192.0.2.40:443",
+            "protocol": "TCP",
+            "starttls_detected": false,
+            "tls": {
+                "observed": false,
+                "tls_version": null,
+                "cipher_suite": null,
+                "key_exchange": null,
+                "forward_secrecy": null
+            },
+            "certificate": {
+                "observed": false,
+                "details": null
+            },
+            "findings": []
+        }
+    ]
+}
