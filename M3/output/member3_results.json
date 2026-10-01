@@ -1,0 +1,50 @@
+[
+    {
+        "stream_id": "192.168.1.10:49152-192.0.2.10:25",
+        "source_ip": "192.168.1.10",
+        "source_port": 49152,
+        "destination_ip": "192.0.2.10",
+        "destination_port": 25,
+        "protocol": "SMTP",
+        "packet_count": 1,
+        "starttls_detected": false,
+        "email_commands": [],
+        "data": ""
+    },
+    {
+        "stream_id": "192.168.1.10:49153-192.0.2.20:143",
+        "source_ip": "192.168.1.10",
+        "source_port": 49153,
+        "destination_ip": "192.0.2.20",
+        "destination_port": 143,
+        "protocol": "IMAP",
+        "packet_count": 1,
+        "starttls_detected": false,
+        "email_commands": [],
+        "data": ""
+    },
+    {
+        "stream_id": "192.168.1.10:49154-192.0.2.30:110",
+        "source_ip": "192.168.1.10",
+        "source_port": 49154,
+        "destination_ip": "192.0.2.30",
+        "destination_port": 110,
+        "protocol": "POP3",
+        "packet_count": 1,
+        "starttls_detected": false,
+        "email_commands": [],
+        "data": ""
+    },
+    {
+        "stream_id": "192.168.1.10:49155-192.0.2.40:443",
+        "source_ip": "192.168.1.10",
+        "source_port": 49155,
+        "destination_ip": "192.0.2.40",
+        "destination_port": 443,
+        "protocol": "TCP",
+        "packet_count": 1,
+        "starttls_detected": false,
+        "email_commands": [],
+        "data": ""
+    }
+]

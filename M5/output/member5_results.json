@@ -1,0 +1,131 @@
+{
+    "module": "M5 - AI/ML and Risk Engine",
+    "streams_analyzed": 4,
+    "results": [
+        {
+            "stream_id": "192.168.1.10:49152-192.0.2.10:25",
+            "protocol": "SMTP",
+            "features": {
+                "starttls_missing": 1,
+                "tls_observed": 0,
+                "certificate_observed": 0,
+                "high_findings": 1,
+                "medium_findings": 0,
+                "critical_findings": 0,
+                "weak_tls_version": 0,
+                "weak_cipher": 0,
+                "no_forward_secrecy": 0,
+                "weak_public_key": 0,
+                "expired_certificate": 0,
+                "invalid_certificate_chain": 0,
+                "weak_signature_algorithm": 0
+            },
+            "risk": {
+                "risk_score": 50,
+                "risk_level": "HIGH",
+                "ml_risk": "CRITICAL",
+                "final_risk": "CRITICAL"
+            },
+            "findings": [
+                {
+                    "severity": "HIGH",
+                    "type": "NO_STARTTLS",
+                    "message": "SMTP stream does not show STARTTLS.",
+                    "recommendation": "Use TLS/STARTTLS for email communication."
+                }
+            ]
+        },
+        {
+            "stream_id": "192.168.1.10:49153-192.0.2.20:143",
+            "protocol": "IMAP",
+            "features": {
+                "starttls_missing": 1,
+                "tls_observed": 0,
+                "certificate_observed": 0,
+                "high_findings": 1,
+                "medium_findings": 0,
+                "critical_findings": 0,
+                "weak_tls_version": 0,
+                "weak_cipher": 0,
+                "no_forward_secrecy": 0,
+                "weak_public_key": 0,
+                "expired_certificate": 0,
+                "invalid_certificate_chain": 0,
+                "weak_signature_algorithm": 0
+            },
+            "risk": {
+                "risk_score": 50,
+                "risk_level": "HIGH",
+                "ml_risk": "CRITICAL",
+                "final_risk": "CRITICAL"
+            },
+            "findings": [
+                {
+                    "severity": "HIGH",
+                    "type": "NO_STARTTLS",
+                    "message": "IMAP stream does not show STARTTLS.",
+                    "recommendation": "Use TLS/STARTTLS for email communication."
+                }
+            ]
+        },
+        {
+            "stream_id": "192.168.1.10:49154-192.0.2.30:110",
+            "protocol": "POP3",
+            "features": {
+                "starttls_missing": 1,
+                "tls_observed": 0,
+                "certificate_observed": 0,
+                "high_findings": 1,
+                "medium_findings": 0,
+                "critical_findings": 0,
+                "weak_tls_version": 0,
+                "weak_cipher": 0,
+                "no_forward_secrecy": 0,
+                "weak_public_key": 0,
+                "expired_certificate": 0,
+                "invalid_certificate_chain": 0,
+                "weak_signature_algorithm": 0
+            },
+            "risk": {
+                "risk_score": 50,
+                "risk_level": "HIGH",
+                "ml_risk": "CRITICAL",
+                "final_risk": "CRITICAL"
+            },
+            "findings": [
+                {
+                    "severity": "HIGH",
+                    "type": "NO_STARTTLS",
+                    "message": "POP3 stream does not show STARTTLS.",
+                    "recommendation": "Use TLS/STARTTLS for email communication."
+                }
+            ]
+        },
+        {
+            "stream_id": "192.168.1.10:49155-192.0.2.40:443",
+            "protocol": "TCP",
+            "features": {
+                "starttls_missing": 0,
+                "tls_observed": 0,
+                "certificate_observed": 0,
+                "high_findings": 0,
+                "medium_findings": 0,
+                "critical_findings": 0,
+                "weak_tls_version": 0,
+                "weak_cipher": 0,
+                "no_forward_secrecy": 0,
+                "weak_public_key": 0,
+                "expired_certificate": 0,
+                "invalid_certificate_chain": 0,
+                "weak_signature_algorithm": 0
+            },
+            "risk": {
+                "risk_score": 0,
+                "risk_level": "LOW",
+                "ml_risk": "LOW",
+                "final_risk": "LOW"
+            },
+            "findings": []
+        }
+    ]
+}
